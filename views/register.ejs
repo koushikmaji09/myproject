@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
+    
+    .input-container {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    
+    .icon {
+      padding: 10px;
+      background: rgb(95, 181, 10);
+      color: white;
+      min-width: 50px;
+      text-align: center;
+    }
+    
+    .input-field {
+      width: 100%;
+      padding: 10px;
+      outline: none;
+    
+    }
+    
+    .input-field:focus {
+      border: 2px solid rgb(45, 187, 92);
+    }
+    
+    
+    .btn {
+      background-color: rgb(23, 207, 20);
+      color: white;
+      padding: 15px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+    
+    
+    .btn:hover {
+      opacity: 1;
+    }
+    :root{
+      --main-bg:#60ab7e;
+    }
+    
+    .main-bg {
+      background: var(--main-bg) !important;
+    }
+</style>
+</head>
+<body>
+  <nav style="height:80px ;" class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#"><img style="width: 250px;" src="image/logo.png"></a>
+      </div>
+      <ul   class="nav navbar-nav navbar-right">>
+        <li><a href="/">Home</a></li>
+            <li  class="active"><a href="/register">Register</a></li>
+            <li class="ab" ><a href="/alogin">Admin</a></li>
+          </ul>
+          
+        </li>
+        
+      </ul>
+      
+    </div>
+    
+  </nav>
+    
+        
+      <body class="main-bg">
+
+        <form action="/save" method="post" style="max-width:500px;margin:auto">
+          <h2>Register Form</h2>
+          <div>
+            Student Name:
+            <input class="input-field" type="text" placeholder="Enter Your Name" name="reg" required>
+          </div>
+        
+          <div>
+            Date:    
+            <input class="input-field" type="date" id="e" name="date" required>
+          </div>
+          
+           <div >
+             Class:
+             <select class="input-field" name="cname" >
+              <option value="1">Select</option>
+                <option value="IX">Ix</option>
+                <option value="X">X</option>
+                <option value="XI">XI</option>
+                <option value="XII">XII</option>
+                <option value="BCA">BCA</option>
+                <option value="B.SC">BSC</option>
+                <option value="B.tech">B.tech</option>
+                <option value="POST Graduate">Post Graduate</option>
+             </select>
+            </div>
+          <div>
+             School/College:
+             <select class="input-field" name="school" >
+                <option value="TDB College">TDB College</option>
+                <option value="RICIS College">RICIS College</option>
+                <option value="RANIGANJ HIGH SCHOOL">RANIGANJ HIGH SCHOOL</option>
+                <option value="RIIT COLLEGE">RIIT COLLEGE</option>
+                <option value="RANIGANJ GIRLS SCHOOL">RANIGANJ GIRLS SCHOOL</option>
+                <option value="BC ROY COLLEGE">BC ROY COLLEGE</option>
+                <option value="ASANSOL ENEGEERNING COLLEGE">ASANSOL ENEGEERNING COLLEGE</option>
+                <option value="OTHERS">OTHERS</option>
+             </select>
+          </div>
+          <div>
+             Semister:
+             <select class="input-field" name="sem" >
+                <option value="NA">NA</option>
+                <option value="1ST SEM">1ST SEM</option>
+                <option value="2ND SEM">2ND SEM</option>
+                <option value="3RD SEM">3RD SEM</option>
+                <option value="4TH SEM">4TH SEM</option>
+                <option value="5TH SEM">5TH SEM</option>
+                <option value="6TH SEM">6TH SEM</option>
+                <option value="7TH SEM">7TH SEM</option>
+                <option value="8TH SEM">8TH SEM</option>
+             </select>
+          </div>
+          <div>
+            Subject:
+            <select class="input-field" name="sub" >
+               <option value="JAVA">JAVA</option>
+               <option value="PYTHON">PYTHON</option>
+               <option value="C lANGUGE">C LANGUAGE</option>
+               <option value="C++">C++</option>
+               <option value="HTML & CSS">HTML & CSS</option>
+               <option value="WEB DEVELOPMENT">WEB DEVELOPMENT</option>
+               <option value="DBMS">DBMD</option>
+               <option value="DATA STRUCTURE">DATA STRUCTURE</option>
+               <option value="ANGULAR">ANGULAR</option>
+               <option value="NODE JS">NODE JS</option>
+            </select>
+         </div>
+          
+          <div>
+             Contact No:
+             <input class="input-field" type="number" placeholder="Enter Your Contact No" name="contact" required>
+          </div>
+          <div>
+            Email Id:
+            <input class="input-field" type="email" placeholder="Enter Your Email" name="email" required>
+         </div>
+         <div>
+          Password:
+          <input class="input-field" type="password" placeholder="Enter Your password" name="password" required>
+       </div>
+        
+          <button type="submit" class="btn">Register</button>
+          <div class="container signin">
+            <br>
+            <p>Already have an account? <a href="/login">Login</a></p>
+          </div>
+          <div>
+          </div>
+        </form>
+
+</body>
+
+<script>
+document.getElementById('e').value = new Date().toISOString().substring(0, 10);
+</script>
+</html>
